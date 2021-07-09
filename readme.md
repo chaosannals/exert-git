@@ -41,6 +41,17 @@ git checkout -- /file/path
 
 过滤分支，名不副实，这个命令是会修改记录的。并非检索信息，命名有误导性。该命令选定遍历器后会遍历所有分支。
 
+```bash
+# 删除指定文件的所有记录。 path/to/your.tar
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch path/to/your.tar" --prune-empty --tag-name-filter cat -- --all
+
+# 修改提交者名 yourname
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME=yourname" -- --all
+
+# 修改提交者邮箱 your@email.com
+git filter-branch -f --env-filter "GIT_AUTHOR_EMAIL=your@email.com" -- --all
+```
+
 ## 删除分支
 
 ```bash
