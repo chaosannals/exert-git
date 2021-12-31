@@ -12,6 +12,9 @@ git log --diff-filter=D --summary
 ```bash
 # 删除指定路径文件的记录。
 git rm --cached --ignore-unmatch /file/path
+
+# 删除指定路径目录记录
+git rm -r --cached /dir/path
 ```
 
 ## git restore
