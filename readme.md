@@ -30,6 +30,13 @@ git restore --staged /file_or_dir/path
 git restore /file_or_dir/path
 ```
 
+## git reset
+
+```bash
+# 指定版本切换当前的记录，配合 git checkout -- /path/to/file 可以切出指定版本的文件
+git reset [commitid] [/path/to/file]
+```
+
 ## git checkout
 
 ```bash
