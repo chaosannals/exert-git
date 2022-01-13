@@ -33,7 +33,7 @@ git restore /file_or_dir/path
 ## git reset
 
 ```bash
-# 指定版本切换当前的记录，配合 git checkout -- /path/to/file 可以切出指定版本的文件
+# 指定版本切换当前的记录（此时 HEAD 变成指定的记录），配合 git checkout -- /path/to/file 可以切出指定版本的文件
 git reset [commitid] [/path/to/file]
 ```
 
