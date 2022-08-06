@@ -7,6 +7,17 @@
 git log --diff-filter=D --summary
 ```
 
+## git clean
+
+```bash
+# 清理新加文件（未跟踪）
+# -f 文件
+# -d 目录
+# -n 列出文件预览
+# -x 连同 .gitignore 忽略的文件也清理。
+git clean -xnfd
+```
+
 ## git rm
 
 ```bash
