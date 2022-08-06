@@ -35,6 +35,12 @@ git restore /file_or_dir/path
 ```bash
 # 指定版本切换当前的记录（此时 HEAD 变成指定的记录），配合 git checkout -- /path/to/file 可以切出指定版本的文件
 git reset [commitid] [/path/to/file]
+
+# 强制转到指定分支
+# fetch 全部分支  硬 reset 到分支 pull 拉去。 
+git fetch --all
+git reset --hard origin/yourbranch
+git pull
 ```
 
 ## git checkout
