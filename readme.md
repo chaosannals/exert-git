@@ -15,6 +15,8 @@ git log --diff-filter=D --summary
 # -d 目录
 # -n 列出文件预览
 # -x 连同 .gitignore 忽略的文件也清理。
+git clean -nfd
+
 git clean -xnfd
 ```
 
