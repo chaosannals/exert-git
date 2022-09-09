@@ -7,6 +7,19 @@
 git log --diff-filter=D --summary
 ```
 
+## git clean
+
+```bash
+# 清理新加文件（未跟踪）
+# -f 文件
+# -d 目录
+# -n 列出文件预览
+# -x 连同 .gitignore 忽略的文件也清理。
+git clean -nfd
+
+git clean -xnfd
+```
+
 ## git rm
 
 ```bash
@@ -35,6 +48,12 @@ git restore /file_or_dir/path
 ```bash
 # 指定版本切换当前的记录（此时 HEAD 变成指定的记录），配合 git checkout -- /path/to/file 可以切出指定版本的文件
 git reset [commitid] [/path/to/file]
+
+# 强制转到指定分支
+# fetch 全部分支  硬 reset 到分支 pull 拉去。 
+git fetch --all
+git reset --hard origin/yourbranch
+git pull
 ```
 
 ## git checkout
