@@ -2,7 +2,15 @@
 
 合并操作
 
-## 不同仓库合并
+## 不同仓库合并 read-tree
+
+
+```bash
+# 指定 仓库和分支合并 --prefix 是必填的
+git subtree add --prefix=twodir git@github.com:your/project.git main
+```
+
+## 不同仓库合并（不推荐，会丢失历史，而且还很麻烦）
 
 注：此种方式合并后 two 参库的历史会丢失，只剩下最后一次的提交历史。
 
