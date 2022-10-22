@@ -90,3 +90,11 @@ git branch -D <name>
 # 删除远程分支
 git push <remote> --delete <name>
 ```
+
+
+## git mv
+
+```bash
+# 移动目录
+git mv /path/to/olddir  /path/to/newdir
+```
