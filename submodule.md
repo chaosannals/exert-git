@@ -1,6 +1,9 @@
 # git submodule 子模块
 
 ```bash
+# 列举子模块
+git submodule
+
 # 添加子模块
 git submodule add <url> <name>
 
@@ -17,6 +20,7 @@ git submodule update
 git submodule deinit --all
 
 # 移出子模块
+# 删除后 .gitmodules 里面还是有记录，要手动删除。
 git rm --cached path/to/submodule
 
 # 迁移子模块目录
