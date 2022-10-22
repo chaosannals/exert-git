@@ -25,5 +25,7 @@ git rm --cached path/to/submodule
 
 # 迁移子模块目录
 # git 1.9.3 或 2.18 版本开始支持用这个命令迁移子模块
+# 直接操作前最好用 git submodule deinit --all 清理，不然一堆文件记录。
+# 如果很多的迁移引起的记录，git checkout . 去掉。
 git mv /path/to/olddir  /path/to/newdir
 ```
