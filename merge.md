@@ -2,6 +2,14 @@
 
 合并操作
 
+```bash
+# --no--squash 合并不压扁记录。
+git merge otherorigin/otherbranch --no--squash
+
+# --squash 压扁记录，很危险，记录被合并成一条新的。
+git merge otherorigin/otherbranch --squash
+```
+
 ## 不同仓库合并 read-tree
 
 只保留了复制后没有迁移目录的记录。
