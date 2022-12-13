@@ -98,3 +98,10 @@ git push <remote> --delete <name>
 # 移动目录
 git mv /path/to/olddir  /path/to/newdir
 ```
+
+## safe.directory
+
+```bash
+# 放行所有，相当于不管这个漏洞了。
+git config --global --add safe.directory '*'
+```
