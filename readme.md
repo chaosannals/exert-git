@@ -105,3 +105,28 @@ git mv /path/to/olddir  /path/to/newdir
 # 放行所有，相当于不管这个漏洞了。
 git config --global --add safe.directory '*'
 ```
+
+
+## HTTP 代理
+
+```bash
+# 全局设置
+git config --global http.proxy http://127.0.0.1:1088
+
+# 变量临时设置
+HTTP_PROXY=http://127.0.0.1:1088
+
+#只对github.com
+git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+
+#取消代理
+git config --global --unset http.https://github.com.proxy
+```
+
+```bat
+@rem 变量临时设置
+set HTTP_PROXY=http://127.0.0.1:1088
+set HTTPS_PROXY=http://127.0.0.1:1088
+set HTTP_PROXY=socks5://127.0.0.1:1080
+set HTTPS_PROXY=socks5://127.0.0.1:1080
+```
