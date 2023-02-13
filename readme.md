@@ -113,6 +113,9 @@ git config --global --add safe.directory '*'
 # 全局设置
 git config --global http.proxy http://127.0.0.1:1088
 
+# 取消代理
+git config --global --unset http.proxy
+
 # 变量临时设置
 HTTP_PROXY=http://127.0.0.1:1088
 
