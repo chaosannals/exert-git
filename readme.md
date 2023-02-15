@@ -104,6 +104,8 @@ git mv /path/to/olddir  /path/to/newdir
 ```bash
 # 放行所有，相当于不管这个漏洞了。
 git config --global --add safe.directory '*'
+
+git config --global --unset-all safe.directory
 ```
 
 
