@@ -3,6 +3,15 @@
 ```bash
 # 关闭权限修改的检测
 git config --global core.filemode false
+
+# 列举
+git config --global --list
+
+# 清理所有 安全目录
+git config --global --unset-all safe.directory 
+
+# 放开安全目录
+git config --global safe.directory '*'
 ```
 
 ### socks5 代理
