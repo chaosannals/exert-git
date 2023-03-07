@@ -64,6 +64,9 @@ git checkout /dir/path
 
 # 撤销修改指定文件。
 git checkout -- /file/path
+
+# 文件切换到指定ID
+git checkout [commitid] -- /file/path
 ```
 
 ## git filter-branch
