@@ -51,6 +51,7 @@ git reset [commitid] [/path/to/file]
 
 # 强制转到指定分支
 # fetch 全部分支  硬 reset 到分支 pull 拉去。 
+# 此方法无法在 2个分支有冲突的时候直接用后者直接覆盖。
 git fetch --all
 git reset --hard origin/yourbranch
 git pull
