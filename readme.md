@@ -1,12 +1,5 @@
 # exert-git
 
-## git log
-
-```bash
-# 查找有删除信息的日志，并显示具体的日志信息。
-git log --diff-filter=D --summary
-```
-
 ## git clean
 
 ```bash
