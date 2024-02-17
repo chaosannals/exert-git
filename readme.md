@@ -1,5 +1,12 @@
 # exert-git
 
+## git fetch
+
+```bash
+# 清理已经删除的远程分支
+git fetch --prune
+```
+
 ## git clean
 
 ```bash
