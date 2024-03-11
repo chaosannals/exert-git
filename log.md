@@ -22,3 +22,11 @@ git log --author="username" --pretty=tformat: --numstat | awk '{ add += $1; subs
 # 打印统计每个人的提交量
 git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
 ```
+
+```bash
+# 最后一条记录的 散列（缩略）
+git log --reverse --format=%h -n 1
+
+# 最后一条记录的 散列（全）
+git log --reverse --format=%H -n 1
+```
